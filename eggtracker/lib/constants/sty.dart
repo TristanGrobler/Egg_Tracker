@@ -16,8 +16,12 @@ class Sty {
     fontSize: 20,
     color: Pal.text1,
   );
-  static TextStyle bodySoftTS = TextStyle(
+  static TextStyle bodySoft1TS = TextStyle(
     fontSize: 20,
+    color: Pal.text1.withOpacity(0.8),
+  );
+  static TextStyle bodySoft2TS = TextStyle(
+    fontSize: 12,
     color: Pal.text1.withOpacity(0.8),
   );
 }

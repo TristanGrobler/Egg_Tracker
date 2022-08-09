@@ -1,7 +1,7 @@
 import 'package:easy_sidemenu/easy_sidemenu.dart';
 import 'package:eggtracker/constants/pal.dart';
 import 'package:eggtracker/screens/house_report_screen.dart';
-import 'package:eggtracker/screens/main_report_screen.dart';
+import 'package:eggtracker/screens/main%20report%20screen/main_report_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../constants/str.dart';
