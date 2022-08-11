@@ -1,6 +1,7 @@
 import 'package:easy_sidemenu/easy_sidemenu.dart';
 import 'package:eggtracker/constants/pal.dart';
-import 'package:eggtracker/screens/house_report_screen.dart';
+import 'package:eggtracker/logic/fake_data.dart';
+import 'package:eggtracker/screens/house%20report%20screen/house_report_screen.dart';
 import 'package:eggtracker/screens/main%20report%20screen/main_report_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -28,62 +29,143 @@ class _HomeScreenState extends State<HomeScreen> {
       SideMenuItem(
         priority: 1,
         title: 'One',
-        onTap: () => page.jumpToPage(1),
+        onTap: () async {
+          page.jumpToPage(1);
+
+          FakeData.refresh();
+        },
         icon: Icon(Icons.home_filled),
+        badgeColor: Colors.white12,
+        badgeContent: Text(
+          '1',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       SideMenuItem(
         priority: 2,
         title: 'Two',
-        onTap: () => page.jumpToPage(2),
+        onTap: () async {
+          page.jumpToPage(2);
+          FakeData.refresh();
+        },
         icon: Icon(Icons.home_filled),
+        badgeColor: Colors.white12,
+        badgeContent: Text(
+          '2',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       SideMenuItem(
         priority: 3,
         title: 'Three',
-        onTap: () => page.jumpToPage(3),
+        onTap: () {
+          FakeData.refresh();
+          page.jumpToPage(3);
+        },
         icon: Icon(Icons.home_filled),
+        badgeColor: Colors.white12,
+        badgeContent: Text(
+          '3',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       SideMenuItem(
         priority: 4,
         title: 'Four',
-        onTap: () => page.jumpToPage(4),
+        onTap: () {
+          FakeData.refresh();
+          page.jumpToPage(4);
+        },
         icon: Icon(Icons.home_filled),
+        badgeColor: Colors.white12,
+        badgeContent: Text(
+          '4',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       SideMenuItem(
         priority: 5,
         title: 'Five',
-        onTap: () => page.jumpToPage(5),
+        onTap: () {
+          FakeData.refresh();
+          page.jumpToPage(5);
+        },
         icon: Icon(Icons.home_filled),
+        badgeColor: Colors.white12,
+        badgeContent: Text(
+          '5',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       SideMenuItem(
         priority: 6,
         title: 'Six',
-        onTap: () => page.jumpToPage(6),
+        onTap: () {
+          FakeData.refresh();
+          page.jumpToPage(6);
+        },
         icon: Icon(Icons.home_filled),
+        badgeColor: Colors.white12,
+        badgeContent: Text(
+          '6',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       SideMenuItem(
         priority: 7,
         title: 'Seven',
-        onTap: () => page.jumpToPage(7),
+        onTap: () {
+          FakeData.refresh();
+          page.jumpToPage(7);
+        },
         icon: Icon(Icons.home_filled),
+        badgeColor: Colors.white12,
+        badgeContent: Text(
+          '7',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       SideMenuItem(
         priority: 8,
         title: 'Eight',
-        onTap: () => page.jumpToPage(8),
+        onTap: () {
+          FakeData.refresh();
+          page.jumpToPage(8);
+        },
         icon: Icon(Icons.home_filled),
+        badgeColor: Colors.white12,
+        badgeContent: Text(
+          '8',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       SideMenuItem(
         priority: 9,
         title: 'Nine',
-        onTap: () => page.jumpToPage(9),
+        onTap: () {
+          FakeData.refresh();
+          page.jumpToPage(9);
+        },
         icon: Icon(Icons.home_filled),
+        badgeColor: Colors.white12,
+        badgeContent: Text(
+          '9',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       SideMenuItem(
         priority: 10,
         title: 'Ten',
-        onTap: () => page.jumpToPage(10),
+        onTap: () {
+          FakeData.refresh();
+          page.jumpToPage(10);
+        },
         icon: Icon(Icons.home_filled),
+        badgeColor: Colors.white12,
+        badgeContent: Text(
+          '10',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
     ];
 

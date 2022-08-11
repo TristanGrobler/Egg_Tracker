@@ -77,7 +77,7 @@ class TotalGraphWidget extends StatelessWidget {
                             onTap: () {},
                           ),
                           Text(
-                            '30 Day Eggs Laid',
+                            _isNarrow ? '15 Day Eggs Laid' : '30 Day Eggs Laid',
                             style: Sty.header1TS,
                           ),
                           InkWell(
@@ -98,7 +98,9 @@ class TotalGraphWidget extends StatelessWidget {
                 ),
                 lineBarsData: [
                   LineChartBarData(
-                    spots: FakeData.stats(_isNarrow),
+                    spots: _isNarrow
+                        ? FakeData.totalEggsLaidNarrow
+                        : FakeData.totalEggsLaidWide,
                     isCurved: true,
                     color: Pal.accent1.withOpacity(0.7),
                     barWidth: 3,

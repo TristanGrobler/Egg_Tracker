@@ -4,8 +4,8 @@ import 'package:syncfusion_flutter_gauges/gauges.dart';
 import '../../../constants/pal.dart';
 import '../../../constants/sty.dart';
 
-class TotalsGaugeWidget extends StatelessWidget {
-  const TotalsGaugeWidget({Key? key}) : super(key: key);
+class AllDayGauge extends StatelessWidget {
+  const AllDayGauge({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

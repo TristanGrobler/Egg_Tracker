@@ -1,5 +1,5 @@
+import 'package:eggtracker/screens/main%20report%20screen/widgets/all_day_gauage.dart';
 import 'package:eggtracker/screens/main%20report%20screen/widgets/house_totals_gauge.dart';
-import 'package:eggtracker/screens/main%20report%20screen/widgets/totals_gauge_widget.dart';
 import 'package:eggtracker/screens/main%20report%20screen/widgets/totals_graph_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +21,7 @@ class MainReportScreen extends StatelessWidget {
                       Expanded(
                         child: TotalGraphWidget(),
                       ),
-                      TotalsGaugeWidget(),
+                      AllDayGauge(),
                     ],
                   ),
                   Row(
@@ -48,7 +48,7 @@ class MainReportScreen extends StatelessWidget {
               )
             : Column(
                 children: [
-                  TotalsGaugeWidget(),
+                  AllDayGauge(),
                   TotalGraphWidget(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
