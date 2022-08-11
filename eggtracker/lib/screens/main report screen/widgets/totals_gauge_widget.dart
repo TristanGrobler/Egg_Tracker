@@ -30,13 +30,19 @@ class TotalsGaugeWidget extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Icon(Icons.chevron_left),
+                InkWell(
+                  child: Icon(Icons.chevron_left),
+                  onTap: () {},
+                ),
                 Text(
                   '${DateTime.now().year} - ${DateTime.now().month} - ${DateTime.now().day}',
                   style: Sty.header2TS,
                   textAlign: TextAlign.center,
                 ),
-                Icon(Icons.chevron_right),
+                InkWell(
+                  child: Icon(Icons.chevron_right),
+                  onTap: () {},
+                ),
               ],
             ),
             SizedBox(

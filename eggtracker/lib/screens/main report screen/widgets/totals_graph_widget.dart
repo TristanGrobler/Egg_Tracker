@@ -1,4 +1,5 @@
 import 'package:eggtracker/constants/pal.dart';
+import 'package:eggtracker/constants/sty.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
@@ -64,7 +65,29 @@ class TotalGraphWidget extends StatelessWidget {
                       },
                     ),
                   ),
-                  topTitles: AxisTitles(),
+                  topTitles: AxisTitles(
+                    axisNameSize: 80,
+                    axisNameWidget: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          InkWell(
+                            child: Icon(Icons.chevron_left),
+                            onTap: () {},
+                          ),
+                          Text(
+                            '30 Day Eggs Laid',
+                            style: Sty.header1TS,
+                          ),
+                          InkWell(
+                            child: Icon(Icons.chevron_right),
+                            onTap: () {},
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                   rightTitles: AxisTitles(),
                 ),
                 gridData: FlGridData(
