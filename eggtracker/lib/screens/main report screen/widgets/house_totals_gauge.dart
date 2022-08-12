@@ -8,7 +8,7 @@ import '../../../constants/sty.dart';
 
 class HouseTotalsGauge extends StatelessWidget {
   HouseTotalsGauge({required this.houseNumber});
-  final double houseNumber;
+  final int houseNumber;
 
   @override
   Widget build(BuildContext context) {
@@ -31,8 +31,8 @@ class HouseTotalsGauge extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        height: getSize(),
-        width: getSize(),
+        height: 400,
+        //width: getSize(),
         decoration: BoxDecoration(
           color: Pal.primary2.withOpacity(0.03),
           borderRadius: BorderRadius.circular(15),
@@ -43,20 +43,22 @@ class HouseTotalsGauge extends StatelessWidget {
           ),
         ),
         child: Column(
-          mainAxisSize: MainAxisSize.min,
+          mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.all(_isDesktop ? 16 : 8.0),
+              padding: EdgeInsets.all(8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
                     Icons.home_filled,
-                    size: _isDesktop ? 40 : 20,
+                    // size: _isDesktop ? 40 : 20,
+                    size: 40,
                   ),
                   Text(
                     '$houseNumber',
-                    style: _isDesktop ? Sty.header1TS : Sty.header2TS,
+                    // style: _isDesktop ? Sty.header1TS : Sty.header2TS,
+                    style: Sty.header1TS,
                   ),
                 ],
               ),
@@ -71,13 +73,12 @@ class HouseTotalsGauge extends StatelessWidget {
                       annotations: [
                         GaugeAnnotation(
                           widget: Container(
-                            child: Text(
-                              '$percentage%',
-                              textAlign: TextAlign.center,
-                              style: _isDesktop
-                                  ? Sty.bodySoft1TS
-                                  : Sty.bodySoft2TS,
-                            ),
+                            child: Text('$percentage%',
+                                textAlign: TextAlign.center,
+                                // style: _isDesktop
+                                //     ? Sty.bodySoft1TS
+                                //     : Sty.bodySoft2TS,
+                                style: Sty.bodySoft1TS),
                           ),
                           angle: 90,
                         )

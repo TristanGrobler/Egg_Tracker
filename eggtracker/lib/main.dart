@@ -1,5 +1,5 @@
 import 'package:eggtracker/logic/fake_data.dart';
-import 'package:eggtracker/screens/login_screen.dart';
+import 'package:eggtracker/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LoginScreen(),
+      home: const HomeScreen(),
     );
   }
 }
