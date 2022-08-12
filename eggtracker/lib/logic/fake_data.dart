@@ -12,6 +12,8 @@ class FakeData {
     setTotalEggsLaidWide();
     setHouseMortalityNarrow();
     setHouseMortalityWide();
+    setHousePercentageLaidNarrow();
+    setHousePercentageLaidWide();
   }
 
   static List<FlSpot> houseEggsLaidNarrow = [];
@@ -22,6 +24,8 @@ class FakeData {
   static List<FlSpot> houseBirdCountWide = [];
   static List<FlSpot> houseMortalityNarrow = [];
   static List<FlSpot> houseMortalityWide = [];
+  static List<FlSpot> housePercentageLaidWide = [];
+  static List<FlSpot> housePercentageLaidNarrow = [];
 
   static refresh() {
     houseEggsLaidNarrow = [];
@@ -32,6 +36,8 @@ class FakeData {
     houseBirdCountWide = [];
     houseMortalityNarrow = [];
     houseMortalityWide = [];
+    housePercentageLaidWide = [];
+    housePercentageLaidNarrow = [];
     FakeData();
   }
 
@@ -230,6 +236,65 @@ class FakeData {
       FlSpot(28, rand.nextInt(1000).toDouble()),
       FlSpot(29, rand.nextInt(1000).toDouble()),
       FlSpot(30, rand.nextInt(1000).toDouble()),
+    ];
+  }
+
+  setHousePercentageLaidNarrow() {
+    Random rand = Random();
+    housePercentageLaidNarrow = [
+      FlSpot(0, rand.nextInt(10).toDouble() + 88),
+      FlSpot(1, rand.nextInt(10).toDouble() + 88),
+      FlSpot(2, rand.nextInt(10).toDouble() + 88),
+      FlSpot(3, rand.nextInt(10).toDouble() + 88),
+      FlSpot(4, rand.nextInt(10).toDouble() + 88),
+      FlSpot(5, rand.nextInt(10).toDouble() + 88),
+      FlSpot(6, rand.nextInt(10).toDouble() + 88),
+      FlSpot(7, rand.nextInt(10).toDouble() + 88),
+      FlSpot(8, rand.nextInt(10).toDouble() + 88),
+      FlSpot(9, rand.nextInt(10).toDouble() + 88),
+      FlSpot(10, rand.nextInt(10).toDouble() + 88),
+      FlSpot(11, rand.nextInt(10).toDouble() + 88),
+      FlSpot(12, rand.nextInt(10).toDouble() + 88),
+      FlSpot(13, rand.nextInt(10).toDouble() + 88),
+      FlSpot(14, rand.nextInt(10).toDouble() + 88),
+      FlSpot(15, rand.nextInt(10).toDouble() + 88),
+    ];
+  }
+
+  setHousePercentageLaidWide() {
+    Random rand = Random();
+    housePercentageLaidWide = [
+      FlSpot(0, rand.nextInt(10).toDouble() + 88),
+      FlSpot(1, rand.nextInt(10).toDouble() + 88),
+      FlSpot(2, rand.nextInt(10).toDouble() + 88),
+      FlSpot(3, rand.nextInt(10).toDouble() + 88),
+      FlSpot(4, rand.nextInt(10).toDouble() + 88),
+      FlSpot(5, rand.nextInt(10).toDouble() + 88),
+      FlSpot(6, rand.nextInt(10).toDouble() + 88),
+      FlSpot(7, rand.nextInt(10).toDouble() + 88),
+      FlSpot(8, rand.nextInt(10).toDouble() + 88),
+      FlSpot(9, rand.nextInt(10).toDouble() + 88),
+      FlSpot(10, rand.nextInt(10).toDouble() + 88),
+      FlSpot(11, rand.nextInt(10).toDouble() + 88),
+      FlSpot(12, rand.nextInt(10).toDouble() + 88),
+      FlSpot(13, rand.nextInt(10).toDouble() + 88),
+      FlSpot(14, rand.nextInt(10).toDouble() + 88),
+      FlSpot(15, rand.nextInt(10).toDouble() + 88),
+      FlSpot(16, rand.nextInt(10).toDouble() + 88),
+      FlSpot(17, rand.nextInt(10).toDouble() + 88),
+      FlSpot(18, rand.nextInt(10).toDouble() + 88),
+      FlSpot(19, rand.nextInt(10).toDouble() + 88),
+      FlSpot(20, rand.nextInt(10).toDouble() + 88),
+      FlSpot(21, rand.nextInt(10).toDouble() + 88),
+      FlSpot(22, rand.nextInt(10).toDouble() + 88),
+      FlSpot(23, rand.nextInt(10).toDouble() + 88),
+      FlSpot(24, rand.nextInt(10).toDouble() + 88),
+      FlSpot(25, rand.nextInt(10).toDouble() + 88),
+      FlSpot(26, rand.nextInt(10).toDouble() + 88),
+      FlSpot(27, rand.nextInt(10).toDouble() + 88),
+      FlSpot(28, rand.nextInt(10).toDouble() + 88),
+      FlSpot(29, rand.nextInt(10).toDouble() + 88),
+      FlSpot(30, rand.nextInt(10).toDouble() + 88),
     ];
   }
 }

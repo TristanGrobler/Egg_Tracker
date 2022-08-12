@@ -65,7 +65,7 @@ class HouseReportScreen extends StatelessWidget {
               ),
       ),
       floatingActionButton: ExpandableFab(
-        fanAngle: 55,
+        fanAngle: 70,
         backgroundColor: Pal.primary1,
         foregroundColor: Pal.accent1,
         child: Icon(Icons.add),
@@ -74,6 +74,12 @@ class HouseReportScreen extends StatelessWidget {
           foregroundColor: Pal.accent1,
         ),
         children: [
+          FloatingActionButton(
+            backgroundColor: Colors.red,
+            foregroundColor: Pal.primary1,
+            child: const Icon(Icons.delete_forever_outlined),
+            onPressed: () {},
+          ),
           FloatingActionButton(
             backgroundColor: Pal.primary1,
             foregroundColor: Pal.accent1,

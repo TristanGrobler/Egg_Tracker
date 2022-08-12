@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
         icon: Icon(Icons.home_filled),
         badgeColor: Colors.white12,
         badgeContent: Text(
-          '1',
+          '  1  ',
           style: TextStyle(color: Colors.white),
         ),
       ),
@@ -51,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
         icon: Icon(Icons.home_filled),
         badgeColor: Colors.white12,
         badgeContent: Text(
-          '2',
+          '  2  ',
           style: TextStyle(color: Colors.white),
         ),
       ),
@@ -65,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
         icon: Icon(Icons.home_filled),
         badgeColor: Colors.white12,
         badgeContent: Text(
-          '3',
+          '  3  ',
           style: TextStyle(color: Colors.white),
         ),
       ),
@@ -79,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
         icon: Icon(Icons.home_filled),
         badgeColor: Colors.white12,
         badgeContent: Text(
-          '4',
+          '  4  ',
           style: TextStyle(color: Colors.white),
         ),
       ),
@@ -93,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
         icon: Icon(Icons.home_filled),
         badgeColor: Colors.white12,
         badgeContent: Text(
-          '5',
+          '  5  ',
           style: TextStyle(color: Colors.white),
         ),
       ),
@@ -107,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
         icon: Icon(Icons.home_filled),
         badgeColor: Colors.white12,
         badgeContent: Text(
-          '6',
+          '  6  ',
           style: TextStyle(color: Colors.white),
         ),
       ),
@@ -121,7 +121,7 @@ class _HomeScreenState extends State<HomeScreen> {
         icon: Icon(Icons.home_filled),
         badgeColor: Colors.white12,
         badgeContent: Text(
-          '7',
+          '  7  ',
           style: TextStyle(color: Colors.white),
         ),
       ),
@@ -135,7 +135,7 @@ class _HomeScreenState extends State<HomeScreen> {
         icon: Icon(Icons.home_filled),
         badgeColor: Colors.white12,
         badgeContent: Text(
-          '8',
+          '8 FR',
           style: TextStyle(color: Colors.white),
         ),
       ),
@@ -149,7 +149,7 @@ class _HomeScreenState extends State<HomeScreen> {
         icon: Icon(Icons.home_filled),
         badgeColor: Colors.white12,
         badgeContent: Text(
-          '9',
+          '9 FR',
           style: TextStyle(color: Colors.white),
         ),
       ),
@@ -163,7 +163,7 @@ class _HomeScreenState extends State<HomeScreen> {
         icon: Icon(Icons.home_filled),
         badgeColor: Colors.white12,
         badgeContent: Text(
-          '10',
+          '  10  ',
           style: TextStyle(color: Colors.white),
         ),
       ),
@@ -221,6 +221,7 @@ class _HomeScreenState extends State<HomeScreen> {
               controller: page,
               children: [
                 MainReportScreen(),
+                HouseReportScreen(house: 1),
                 HouseReportScreen(house: 1),
                 HouseReportScreen(house: 2),
                 HouseReportScreen(house: 3),
